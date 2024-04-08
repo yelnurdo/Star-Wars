@@ -1,0 +1,118 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+nav {
+    background-color: #333;
+    color: white;
+    padding: 1rem;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+header {
+    background-color: #555;
+    color: white;
+    padding: 2rem;
+    text-align: center;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; /* This will space out the cards evenly */
+    margin: 2rem;
+}
+
+main section {
+    margin-bottom: 2rem;
+}
+
+h1, h2 {
+    color: #333;
+}
+
+p {
+    line-height: 1.6;
+}
+.card {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 1rem;
+    overflow: hidden;
+    width: calc(33.333% - 2rem); /* Subtract margin from the width to fit three in a row */
+    box-sizing: border-box; /* Include padding and borders in the element's width and height */
+}
+
+.card-header {
+    background-color: #555;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+
+.card-content {
+    padding: 1rem;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.pagination button {
+    background-color: #555;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    margin: 0 0.5rem;
+    cursor: pointer; /* Make it clear that they are clickable */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+.pagination button:hover {
+    background-color: #666; /* Slightly lighter on hover for feedback */
+}
+
+.pagination button:disabled {
+    background-color: #aaa;
+    cursor: default; /* Show that the button is not clickable */
+}
+
+.pagination span {
+    margin: 0 1rem; /* Add some spacing around the page info */
+}
+@media screen and (max-width: 768px) {
+  .card {
+    width: calc(50% - 2rem); /* Adjust to have two cards per row on smaller screens */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .card {
+    width: 100%; /* On very small screens, each card takes full width */
+  }
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Star Wars Universe - Search</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="webapp.html">Search</a></li>
+            <li><a href="planets.html">Planets</a></li>
+            <li><a href="characters.html">Characters</a></li>
+            <li><a href="starships.html">Starships</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+    </nav>
+    <header>
+        <h1>Star Wars Universe - Web Application</h1>
+    </header>
+    <main>
+        <div class="card">
+            <div class="card-header">Search</div>
+            <div class="card-content">
+                <select id="search-type">
+                    <option value="people">Characters</option>
+                    <option value="planets">Planets</option>
+                    <option value="starships">Starships</option>
+                </select>
+                <input type="text" id="search-input" placeholder="Search...">
+                <button id="search-button">Search</button>
+            </div>
+        </div>
+        <div class="card" id="results-card">
+            <div class="card-header">Results</div>
+            <div class="card-content" id="results-content">
+                <!-- Results will be displayed here -->
+            </div>
+            <div class="pagination">
+            <button id="prev-page">Previous</button>
+            <span id="page-info"></span>
+            <button id="next-page">Next</button>
+        </div>
+        </div>
+
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
