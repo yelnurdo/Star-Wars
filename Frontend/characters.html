@@ -21,12 +21,20 @@
         <h1>Characters of the Star Wars Universe</h1>
     </header>
     <main id="characters-content">
-        <!-- Dynamic content will be loaded here -->
+        <!-- Characters will be loaded here -->
     </main>
     <div class="pagination">
         <button id="prev-character-page">Previous</button>
         <span id="character-page-info"></span>
         <button id="next-character-page">Next</button>
+    </div>
+    <!-- Character Detail Modal -->
+    <div id="characterModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2 id="characterName"></h2>
+            <p id="characterDetails"></p>
+        </div>
     </div>
     <script src="characters.js"></script>
 </body>
